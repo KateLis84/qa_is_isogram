@@ -23,4 +23,9 @@ describe('isIsogram', () => {
   it('returns false if the word has repeated letters, e.g. "Apple"', () => {
     expect(isIsogram('Apple')).toBeFalsy();
   });
+
+  it('returns false when the same letter appears in different cases', () => {
+    expect(isIsogram('Adam')).toBeFalsy();
+  });
+
 });
