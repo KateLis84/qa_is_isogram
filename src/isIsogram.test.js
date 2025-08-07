@@ -28,4 +28,15 @@ describe('isIsogram', () => {
     expect(isIsogram('Adam')).toBeFalsy();
   });
 
+  it('returns true for the example "playgrounds"', () => {
+    expect(isIsogram('playgrounds')).toBeTruthy();
+  });
+
+  it('returns false for the example "look"', () => {
+    expect(isIsogram('look')).toBeFalsy();
+  });
+
+  it('returns false for the example "Oops"', () => {
+    expect(isIsogram('Oops')).toBeFalsy();
+  });
 });
